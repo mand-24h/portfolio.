@@ -227,8 +227,9 @@
             aspect-ratio: 4/3;
         }
         .gallery-card:hover { transform: scale(1.02); box-shadow: 0 15px 40px rgba(52,211,153,0.15); }
-        .gallery-card img {
-            width: 100%; height: 100%; object-fit: cover;
+.gallery-card img {
+    width: 100%; height: 100%; object-fit: contain;
+    background: var(--mid);
             transition: transform 0.4s;
             display: block;
         }
@@ -329,7 +330,7 @@
         }
         .contact-item-text { display: flex; flex-direction: column; gap: 0.25rem; }
         .contact-item-label { font-size: 0.72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
-        .contact-item-value { font-size: 0.95rem; font-weight: 600; color: var(--text); }
+        .contact-item-value { font-size: 0.82rem; font-weight: 600; color: var(--text); word-break: break-all; }
 
         /* ─── FOOTER ─── */
         footer {
@@ -418,7 +419,11 @@
 <!-- Header -->
 <header id="header">
     <nav>
-        <div class="logo">Abdullah Awad</div>
+<div class="logo">
+    <img src="https://i.postimg.cc/kG1WW2Xw/tsmym-bdwn-ʿnwan.png" style="width:35px; height:35px; border-radius:50%; object-fit:cover;">
+    <span data-en="Abdullah Awad" data-ar="عبدالله عوض">Abdullah Awad</span>
+</div>
+
         <div class="nav-right">
             <div class="nav-links">
                 <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
@@ -838,12 +843,14 @@
     <div class="footer-inner">
         <div class="footer-logo">Abdullah Awad</div>
         <div class="social-links">
-            <a href="#"><i class="fab fa-discord"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+<a href="https://discord.com/users/1302306054683758758" target="_blank">
+    <i class="fab fa-discord"></i>
+</a>
+<a href="https://instagram.com/2.kqb" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
         </div>
-        <p class="footer-copy" data-en="© 2025 Abdullah Awad. All rights reserved." data-ar="© 2026 عبدالله عوض. جميع الحقوق محفوظة.">©  2026Abdullah Awad. All rights reserved.</p>
+        <p class="footer-copy" data-en="© 2026 Abdullah Awad. All rights reserved." data-ar="© 2026 عبدالله عوض. جميع الحقوق محفوظة.">©  2026 Abdullah Awad. All rights reserved.</p>
     </div>
 </footer>
 
